@@ -10,6 +10,7 @@ export class SetPasswordComponent implements OnInit {
   headingMain:string = 'Your dinner';
   headingSub:string = 'awaits'
   
+  password=""
   constructor() { }
 
   ngOnInit(): void {

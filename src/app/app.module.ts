@@ -12,6 +12,7 @@ import { SetPasswordComponent } from './set-password/set-password.component';
 import { HeaderComponent } from './header/header.component';
 import { TermsComponent } from './terms/terms.component';
 import { NgOtpInputModule } from  'ng-otp-input';
+import { PasswordStrengthMeterModule } from 'angular-password-strength-meter';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NgOtpInputModule } from  'ng-otp-input';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgOtpInputModule
+    NgOtpInputModule,
+    PasswordStrengthMeterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
