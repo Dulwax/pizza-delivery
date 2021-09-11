@@ -1,0 +1,16 @@
+.back-image{
+  background-image:url("/assets/images/man-enjoying-some-delicious-italian-food-3.jpg"); 
+}
+
+::ng-deep{
+  .wrappers .otp-input:not(:last-child) {
+  margin-right: 18px !important;
+}
+}
+
+
+
+
+
+
+
