@@ -9,11 +9,14 @@ import { RegisterComponent } from './register/register.component';
 import { OtpComponent } from './otp/otp.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { SetPasswordComponent } from './set-password/set-password.component';
-import { HeaderComponent } from './header/header.component';
-import { TermsComponent } from './terms/terms.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { TermsComponent } from './components/terms/terms.component';
 import { NgOtpInputModule } from  'ng-otp-input';
 import { PasswordStrengthMeterModule } from 'angular-password-strength-meter';
 import { OptForgotComponent } from './opt-forgot/opt-forgot.component';
+import { OtpLinkComponent } from './components/otp-link/otp-link.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { MainHeadingComponent } from './components/main-heading/main-heading.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { OptForgotComponent } from './opt-forgot/opt-forgot.component';
     SetPasswordComponent,
     HeaderComponent,
     TermsComponent,
-    OptForgotComponent
+    OptForgotComponent,
+    OtpLinkComponent,
+    FooterComponent,
+    MainHeadingComponent
   ],
   imports: [
     BrowserModule,

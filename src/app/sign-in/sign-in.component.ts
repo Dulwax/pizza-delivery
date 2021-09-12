@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -7,12 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInComponent implements OnInit {
   
-  headingMain:string = 'A step closer';
-  headingSub:string = 'to dining in'
-  
-  constructor() { }
+ 
+  constructor(private router:Router) { }
   
   ngOnInit(): void {
+  }
+
+  linkTo(event:string){
+    this.router.navigate(['/' + event]);
   }
   
 }

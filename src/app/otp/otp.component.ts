@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-otp',
@@ -7,8 +8,6 @@ import { Component, Input, OnInit, ViewChild } from '@angular/core';
 })
 export class OtpComponent implements OnInit {
   
-  headingMain:string = 'Get it while';
-  headingSub:string = "it's hot";
   
 
   config = {
@@ -22,16 +21,20 @@ export class OtpComponent implements OnInit {
       'height': '44px',
       'border': 'solid 1px #F7D0D1',
       'font-size': '20px',
-      'border-radius': '5px'
+      'border-radius': '5px',
+      'filter': 'drop-shadow(5px 5px 4px rgba(0,0,0,.23))'
     },
     containerClass:'wrappers'
   };
   
   
   
-  constructor() { }
+  constructor(private router:Router) { }
   
   ngOnInit(): void {
   }
   
+  linkTo(event:string){
+    this.router.navigate(['/' + event]);
+  }
 }

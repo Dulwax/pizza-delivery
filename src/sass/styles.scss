@@ -7,7 +7,6 @@
 
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
-
 html,body{
   min-height: 100%;
   padding: 0;
@@ -22,7 +21,9 @@ html,body{
 .w{
   &-bottom{
     width: 414px;
-    
+    @media (max-width:413px) {
+      width: 100%;
+    }
     &-middle{
       &-block{
         bottom: 171px;
@@ -47,13 +48,26 @@ html,body{
     background-position:50% 50%;
   }
   &-inner-pages{
-    height:334px;
+    height:369px;
+    @media (max-width:413px) {
+      height: 304px;
+    }
   }
   
+}
+
+.home-radius {
+  border-radius: 20px 20px 0 0;
 }
 .container-custom {
   max-width: 414px !important;
   
+  &-block{
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    top: -24px;
+    
+  }
   
   &-landing{
     &-page{

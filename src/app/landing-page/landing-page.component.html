@@ -6,26 +6,24 @@
         
         <div class="mx-5 mb-6 text-white">
             <h1 class="font-weight-bold">Order <span class="text-primary">Pizza</span> </h1>
-            <p class="font-weight-semi-bold sub-heading">Enjoy deliveries from a variety of <br>Pizza restuarants</p>
+            <p class="font-weight-semi-bold sub-heading">Enjoy deliveries from a variety of <br class="d-sm-block d-none">Pizza restuarants</p>
         </div>
     </div>
 </div>
 
-<div class="container-fluid  position-relative container-custom  " >
+<div class="container-fluid  container-custom-block position-relative container-custom  " >
     
     
-    <div class="fixed-bottom  bg-secondary w-bottom w-bottom-block mx-auto" >
+    <div class="fixed-bottom home-radius bg-secondary w-bottom w-bottom-block mx-auto" >
         
         
         <div class="cta py-4 mb-3 mx-5">
             <button  [routerLink]="['/sign-in']" class="btn btn-md mt-3 mb-3 font-size-sm text-black btn-primary w-100 font-weight-semi-bold">Sign in</button>
             <button [routerLink]="['/register']" class="btn btn-md font-size-sm  btn-off-white mb-3 text-black w-100 font-weight-semi-bold">Register</button>
         </div>
-        <footer class="footer d-flex mb-3 justify-content-center">
-            <div class="forgot-password  ">
-                <a class="text-decoration-none" [routerLink]="['/forgot-password']"><span class="text-white">Forgot password?</span>  <span class="text-primary"> Recover password</span> </a> 
-            </div>
-        </footer>
+
+        <app-footer normalText="Forgot password?" linkText="Recover password" (linkTo)="linkTo('forgot-password')"></app-footer>
+       
     </div>
     
     
