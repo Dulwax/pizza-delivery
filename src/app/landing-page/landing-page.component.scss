@@ -1,4 +1,12 @@
+
 .back-image{
-    background-image:url("/assets/images/glutten-free-pizza.jpg"); 
+ 
+    background-image:url("/assets/images/banner-images/landing-page-banner.jpg"); 
+  }
+  
+  .vh{
+    &-banner{
+      height: 84vh;
+    }
   }
   

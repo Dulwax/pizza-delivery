@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { TermsComponent } from './terms/terms.component';
 import { NgOtpInputModule } from  'ng-otp-input';
 import { PasswordStrengthMeterModule } from 'angular-password-strength-meter';
+import { OptForgotComponent } from './opt-forgot/opt-forgot.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PasswordStrengthMeterModule } from 'angular-password-strength-meter';
     ForgotPasswordComponent,
     SetPasswordComponent,
     HeaderComponent,
-    TermsComponent
+    TermsComponent,
+    OptForgotComponent
   ],
   imports: [
     BrowserModule,

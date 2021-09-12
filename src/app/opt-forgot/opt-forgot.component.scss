@@ -1,0 +1,19 @@
+
+.back-image{
+ 
+    background-image:url("/assets/images/banner-images/otp-banner.jpg"); 
+  }
+  
+  ::ng-deep{
+    .wrappers .otp-input:not(:last-child) {
+    margin-right: 18px !important;
+  }
+  }
+  
+  
+  
+  
+  
+  
+  
+  

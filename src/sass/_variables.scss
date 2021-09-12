@@ -51,9 +51,12 @@ $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
 $overlay : #262525 !default;
 $cheese : #FABE01 !default;
-$tomato:#CA2529 !default;
+$tomato:#EC454C !default;
 $olive:#5B511B !default;
 $light-yellow : #FEFBF3 !default;
+$light-pink :#FCDDEC !default;
+$light-placeholder:#e9d3d4 !default;
+$off-white : #e4e2e2 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -70,13 +73,17 @@ $colors: (
 "cyan":       $cyan,
 "white":      $white,
 "gray":       $gray-600,
+"off-white" : $off-white,
 "gray-dark":  $gray-800,
 "cheese" : $cheese,
 "tomato":$tomato,
 "olive":$olive,
 "black":$black,
 "gray-800":$gray-800,
-"black-60":rgba($black, .63)
+"black-60":rgba($black, .63),
+'light-yellow' : $light-yellow,
+'light-pink' :$light-pink ,
+'light-placeholder':$light-placeholder 
 ) !default;
 // scss-docs-end colors-map
 
@@ -101,9 +108,13 @@ $theme-colors: (
 "warning":    $warning,
 "danger":     $danger,
 "light":      $light,
+"off-white": $off-white,
 "dark":       $dark,
 "black" : $black,
 "gray-800":$gray-800,
+'light-yellow' : $light-yellow,
+'light-pink' :$light-pink ,
+'light-placeholder':$light-placeholder 
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -551,7 +562,7 @@ $border-color:                $gray-300 !default;
 
 // scss-docs-start border-radius-variables
 $border-radius:               .313rem !default;
-$border-radius-sm:            .313 !default;
+$border-radius-sm:            .313rem !default;
 $border-radius-lg:            .3rem !default;
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
@@ -876,11 +887,11 @@ $input-padding-y-lg:                    $input-btn-padding-y-lg !default;
 $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-font-size-lg:                    $input-btn-font-size-lg !default;
 
-$input-bg:                              $light-yellow !default;
+$input-bg:                              $light-pink !default;
 $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
-$input-color:                           $body-color !default;
+$input-color:                           $light-placeholder !default;
 $input-border-color:                    $gray-400 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;

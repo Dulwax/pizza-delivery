@@ -5,6 +5,8 @@
 
 @import "~bootstrap/scss/bootstrap";
 
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
 
 html,body{
   min-height: 100%;
@@ -18,187 +20,166 @@ html,body{
 
 
 .w{
-  &-385{
-    width: 385px;
-  }
-  &-414{
-    left:0;
-    right:0;
-    width: 100%;
+  &-bottom{
+    width: 414px;
     
+    &-middle{
+      &-block{
+        bottom: 171px;
+      }
+    }
     
+    &-414{
+      left:0;
+      right:0;
+      width: 100%;
+      
+      
+    }
   }
 }
 
 .back-image{
+  box-shadow:inset 0 0 0 2000px rgba(38,37,37, 0.48);
   &-attr{
     background-size:cover;
     background-repeat: no-repeat;
     background-position:50% 50%;
   }
+  &-inner-pages{
+    height:334px;
+  }
+  
+}
+.container-custom {
+  max-width: 414px !important;
+  
+  
+  &-landing{
+    &-page{
+      box-shadow:inset 0 0 0 2000px rgba(38,37,37, 0.40);
+    }
+  }
   
 }
 
-  .container-custom {
-    max-width: 414px !important;
-    min-height: 100vh;
-    box-shadow:inset 0 0 0 2000px rgba(38,37,37, 0.40);
-    &-inner{
-      &-page{
-        box-shadow:inset 0 0 0 2000px rgba(0,0,0, .53);
-      }
-    }
-    
-  }
+footer{
+  font-size: 13px;
+  line-height: 18px;  
+  letter-spacing: -0.02em;
+}
+
+.font{
   
-  footer{
-    font-size: 13px;
-    line-height: 18px;  
-    letter-spacing: -0.02em;
-  }
-  
-  .font{
-    
-    &-weight{
-      &-bold{
-        font-weight: $font-weight-bold;
-      }
-      &-semi-bold-light{
-        font-weight: $font-weight-semi-bold-light;
-      }
-      &-semi-bold{
-        font-weight: $font-weight-semi-bold;
-      }
+  &-weight{
+    &-bold{
+      font-weight: $font-weight-bold;
     }
-    &-size{
-      &-md{
-        font-size: $font-size-md;
-      }
-      &-sm{
-        font-size: $font-size-sm;
-      }
-      
-      &-xs{
-        font-size: $font-size-xs;
-      }
+    &-semi-bold-light{
+      font-weight: $font-weight-semi-bold-light;
+    }
+    &-semi-bold{
+      font-weight: $font-weight-semi-bold;
     }
   }
-  
-  
-  .btn{
-    &-cta{
-      font-size: 0.875rem;
-      letter-spacing: -0.02em;
-      &-tertiary{
-        
-        background-color:var(--bs-olive)
-      }
-      &,&-opactiy{
-        background-color:rgba($black, .63)
-      }
-    }
-    
-  }
-  
-  h1{
-    stroke: var(--bs-olive);
-  }
-  
-  .block{
-    min-height: 66vh;
-    &-sm{
-      min-height: 61vh;
-    }
-    overflow: hidden;
-    border: 1px solid rgba(250,190,1,.17);
-    &-light{
-      box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.6);
-    }
-    
-    &-dark{
-      box-shadow:inset 0 0 0 2000px rgba(0,0,0, 0.2);
-    }
-    
-  }
-  
-  .border-light-yellow{
-    border-color: rgba($cheese,.17) ;
-  }
-  
-  .body{
-    &-heading{
-      font-size: 1.063rem;
-    }
-  }
-  
-  .logo{
+  &-size{
     &-md{
-      &, img{
-        max-width: 247px;
-      }
+      font-size: $font-size-md;
     }
     &-sm{
-      &, img{
-        max-width: 41px;
-        float:right
-      }
+      font-size: $font-size-sm;
     }
     
+    &-xs{
+      font-size: $font-size-xs;
+    }
+  }
+}
+
+
+.btn{
+  &-cta{
+    font-size: 0.875rem;
+    letter-spacing: -0.02em;
+   
   }
   
-  // .vh{
-    //   &-custom{
-      //     &-min{
-        //       min-height: 84vh;
-        //       &-xs{
-          //         min-height: 4vh;
-          
-          //       }
-          //       &-sm{
-            //         min-height: 8vh; 
-            //       }
-            //       &-md{
-              //         min-height: 17vh; 
-              //       }
-              
-              //     }
-              
-              //   }
-              // }
-              
-              .sub{
-                &-heading{
-                  line-height: 21px;
-                  letter-spacing: -0.02em;
-                  font-size: 1.063rem;
-                  
-                }
-              }
-              
-              
-              
-              /* Change Autocomplete styles in Chrome*/
-              input:-webkit-autofill,
-              input:-internal-autofill-selected,
-              input:-webkit-autofill:hover,
-              input:-webkit-autofill:focus,
-              textarea:-webkit-autofill,
-              textarea:-webkit-autofill:hover,
-              textarea:-webkit-autofill:focus,
-              select:-webkit-autofill,
-              select:-webkit-autofill:hover,
-              select:-webkit-autofill:focus {
-                border: 1px solid transparent;
-                -webkit-text-fill-color: rgba(#181817, .68);
-                -webkit-box-shadow: none;
-                font-size: .89rem;
-                transition: background-color 5000s ease-in-out 0s;
-                font-family: var(--bs-font-sans-serif) ;
-                font: 400 .89rem var(--bs-font-sans-serif);
-                background-color: rgb(var(--bs-light-yellow)) !important;
-                background-image: none !important;
-                color: rgba(#181817, .68) !important; 
-              }
-              
-              
-              
+}
+
+
+.block{
+  min-height: 66vh;
+  &-sm{
+    min-height: 61vh;
+  }
+  overflow: hidden;
+
+  
+}
+
+
+
+
+.logo{
+  &-md{
+    &, img{
+      max-width: 164px;
+    }
+  }
+  &-sm{
+    &, img{
+      max-width: 56px;
+      float:right
+    }
+  }
+  
+}
+
+
+
+.sub{
+  &-heading{
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    font-size: 1.063rem;
+    
+  }
+}
+
+
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-internal-autofill-selected,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid var(--bs-white);
+  -webkit-text-fill-color: var(--bs-black-60);
+  -webkit-box-shadow: none;
+  font-size: .89rem;
+  transition: background-color 5000s ease-in-out 0s;
+  font-family: var(--bs-font-sans-serif) ;
+  font: 400 .89rem var(--bs-font-sans-serif);
+  background-color: rgb(var(--bs-light-pink)) !important;
+  background-image: none !important;
+  color: var(--bs-black-60) !important; 
+}
+
+a{
+  font-weight: $font-weight-semi-bold;
+  cursor: pointer;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--bs-black-60) !important;
+  opacity: 1; /* Firefox */
+  
+}
+
+

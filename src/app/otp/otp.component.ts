@@ -1,6 +1,4 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
-import { NavigationEnd, Router, RoutesRecognized } from '@angular/router';
-import { filter, pairwise } from 'rxjs/operators';
 
 @Component({
   selector: 'app-otp',
@@ -12,7 +10,7 @@ export class OtpComponent implements OnInit {
   headingMain:string = 'Get it while';
   headingSub:string = "it's hot";
   
-  
+
   config = {
     allowNumbersOnly: true,
     length: 5,
@@ -29,19 +27,9 @@ export class OtpComponent implements OnInit {
     containerClass:'wrappers'
   };
   
-  previousUrl: string='';
- 
-  
-  constructor(router: Router) {
-    router.events
-    .pipe(filter((evt: any) => evt instanceof RoutesRecognized), pairwise())
-    .subscribe((events: RoutesRecognized[]) => {
-      this.previousUrl = events[0].urlAfterRedirects;
-    });
-  }
   
   
-  
+  constructor() { }
   
   ngOnInit(): void {
   }

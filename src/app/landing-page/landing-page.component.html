@@ -1,23 +1,29 @@
-<div class="container container-custom  back-image back-image-attr" >
-    
-    
-    <div class="logo logo-md pt-4 mx-auto">
-        <img src="/assets/images/logo/mr_pizza_logo.png" alt="">
+<div class="container-custom position-relative back-image vh-banner back-image-inner-pages back-image-attr container-fluid">
+    <div class="logo logo-md pt-5 mx-auto">
+        <img src="/assets/images/logo/pizza_delivery-logo.jpg" alt="">
     </div>
-    
-    <div class="fixed-bottom w-385 mx-auto" >
+    <div class="fixed-bottom w-bottom w-bottom-middle-block mx-auto" >
         
-        <div class="mx-3 mb-6 text-white">
+        <div class="mx-5 mb-6 text-white">
             <h1 class="font-weight-bold">Order <span class="text-primary">Pizza</span> </h1>
             <p class="font-weight-semi-bold sub-heading">Enjoy deliveries from a variety of <br>Pizza restuarants</p>
         </div>
-        <div class="cta mx-3">
-            <button  [routerLink]="['/sign-in']" class="btn btn-md mb-3 btn-cta text-white bg-secondary w-100 font-weight-semi-bold">Sign in</button>
-            <button [routerLink]="['/register']" class="btn btn-cta btn-cta-tertiary mb-4 text-white w-100 font-weight-semi-bold">Register</button>
+    </div>
+</div>
+
+<div class="container-fluid  position-relative container-custom  " >
+    
+    
+    <div class="fixed-bottom  bg-secondary w-bottom w-bottom-block mx-auto" >
+        
+        
+        <div class="cta py-4 mb-3 mx-5">
+            <button  [routerLink]="['/sign-in']" class="btn btn-md mt-3 mb-3 font-size-sm text-black btn-primary w-100 font-weight-semi-bold">Sign in</button>
+            <button [routerLink]="['/register']" class="btn btn-md font-size-sm  btn-off-white mb-3 text-black w-100 font-weight-semi-bold">Register</button>
         </div>
-        <footer class="footer mb-3 d-flex justify-content-center">
+        <footer class="footer d-flex mb-3 justify-content-center">
             <div class="forgot-password  ">
-             <a class="text-decoration-none" [routerLink]="['/forgot-password']"><span class="text-white">Forgot password?</span>  <span class="text-primary"> Recover password</span> </a> 
+                <a class="text-decoration-none" [routerLink]="['/forgot-password']"><span class="text-white">Forgot password?</span>  <span class="text-primary"> Recover password</span> </a> 
             </div>
         </footer>
     </div>

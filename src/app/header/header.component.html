@@ -1,12 +1,13 @@
 
-<div class="d-flex justify-content-between">
+
+<div class="d-flex pt-4 align-items-center justify-content-between">
     
-    <div>
-        arrow
-    </div>
+    <a (click)="goBack()" class="btn-white text-decoration-none font-weight-semi-bold arrow">
+        <i class="fi-rr-angle-left"></i>
+    </a>
     
-    <a [routerLink]="['/']" class="logo logo-sm pt-4">
-        <img  src="/assets/images/logo/pizza_delivery-only-logo.png" alt="">
+    <a [routerLink]="['/']" class="logo logo-sm ">
+        <img  src="/assets/images/logo/pizza_delivery-logo-sm.jpg" alt="">
     </a>
 </div>
 
