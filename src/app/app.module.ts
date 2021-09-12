@@ -17,6 +17,7 @@ import { OptForgotComponent } from './opt-forgot/opt-forgot.component';
 import { OtpLinkComponent } from './components/otp-link/otp-link.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { MainHeadingComponent } from './components/main-heading/main-heading.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MainHeadingComponent } from './components/main-heading/main-heading.com
     OptForgotComponent,
     OtpLinkComponent,
     FooterComponent,
-    MainHeadingComponent
+    MainHeadingComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-set-password',
@@ -9,12 +9,10 @@ import { Router } from '@angular/router';
 export class SetPasswordComponent implements OnInit {
   
  
-  constructor(private router:Router) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  linkTo(event:string){
-    this.router.navigate(['/' + event]);
-  }
+ 
 }

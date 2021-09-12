@@ -18,11 +18,12 @@
         
         
         <div class="cta py-4 mb-3 mx-5">
-            <button  [routerLink]="['/sign-in']" class="btn btn-md mt-3 mb-3 font-size-sm text-black btn-primary w-100 font-weight-semi-bold">Sign in</button>
-            <button [routerLink]="['/register']" class="btn btn-md font-size-sm  btn-off-white mb-3 text-black w-100 font-weight-semi-bold">Register</button>
+            <app-button link="sign-in" btnExtra="mt-3 mb-3" title="Sign in" ></app-button>
+            <app-button link="register" btnStyle="btn-off-white" btnExtra="mb-3" title="Register" ></app-button>
+            
         </div>
 
-        <app-footer normalText="Forgot password?" linkText="Recover password" (linkTo)="linkTo('forgot-password')"></app-footer>
+        <app-footer normalText="Forgot password?" linkText="Recover password" link="forgot-password"></app-footer>
        
     </div>
     

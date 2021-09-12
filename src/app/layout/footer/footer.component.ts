@@ -1,4 +1,5 @@
 import { Component, Input, OnInit,Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -13,16 +14,15 @@ export class FooterComponent implements OnInit {
   @Input() public link:string = 'sign-in';
   @Input() public linkText:string = 'Please sign in';
 
-  @Output() linkTo = new EventEmitter<string>();
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
 
-  linkToScreen(value: string) {
-    const newLink = value != null ? value : this.link;
-    this.linkTo.emit(newLink);
+  open(value: string) {
+    const newLink = value != '' ? value : this.link;
+    this.router.navigate(['/' + value]);
   }
 
 

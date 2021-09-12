@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class OptForgotComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor() { }
 
   
 
@@ -32,8 +32,6 @@ export class OptForgotComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  linkTo(event:string){
-    this.router.navigate(['/' + event]);
-  }
+  
 
 }

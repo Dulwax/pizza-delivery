@@ -25,8 +25,7 @@
             
             <app-terms></app-terms>
 
-            <button   [routerLink]="['/sign-in']" class="btn btn-md btn-cta text-black btn-primary w-100 font-weight-semi-bold">Verify and proceed</button>
-
+            <app-button link="sign-in"  title="Verify and proceed" ></app-button>
             
             <app-footer (linkTo)="linkTo('sign-in')"></app-footer>
         </div>

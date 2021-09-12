@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-forgot-password',
@@ -10,13 +10,11 @@ export class ForgotPasswordComponent implements OnInit {
 
 
 
-  constructor(private router:Router) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  linkTo(event:string){
-    this.router.navigate(['/' + event]);
-  }
+
 
 }

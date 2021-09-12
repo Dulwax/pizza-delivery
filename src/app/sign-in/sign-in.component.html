@@ -21,12 +21,14 @@
                         <input type="password" class="form-control form-control-sm" autocomplete="off" id="exampleInputPassword1" placeholder="Password">
                         <a [routerLink]="['/forgot-password']" id="emailHelp" class="form-text font-size-xs  py-1 d-flex font-weight-semi-bold justify-content-end text-decoration-none text-white">Forgot password ?</a>
                     </div>
+
+                    <app-button link="sign-in" title="Sign in" btnExtra="mt-5" ></app-button>
+
                     
-                    <button  [routerLink]="['/sign-in']" class="btn btn-md  mt-5 btn-cta text-back btn-primary w-100 font-weight-semi-bold">Sign in</button>
                 </form>
             </div>
             
-            <app-footer  normalText="Already a user?" linkText="Please register" (linkTo)="linkTo('register')"></app-footer>
+            <app-footer  normalText="Already a user?" linkText="Please register" link="register"></app-footer>
         </div>
         
         
