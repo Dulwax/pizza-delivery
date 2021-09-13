@@ -12,7 +12,6 @@ import { SetPasswordComponent } from './set-password/set-password.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { TermsComponent } from './components/terms/terms.component';
 import { NgOtpInputModule } from  'ng-otp-input';
-import { PasswordStrengthMeterModule } from 'angular-password-strength-meter';
 import { OptForgotComponent } from './opt-forgot/opt-forgot.component';
 import { OtpLinkComponent } from './components/otp-link/otp-link.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -39,8 +38,7 @@ import { ButtonComponent } from './components/button/button.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgOtpInputModule,
-    PasswordStrengthMeterModule
+    NgOtpInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
